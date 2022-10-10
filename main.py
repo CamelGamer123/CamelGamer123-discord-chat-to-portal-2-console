@@ -1,9 +1,16 @@
 import discord
 import os
 
+# Discord bot token goes here
 token = "Token goes here"
+
+# Your private ip goes here
 ip = "Ip goes here"
+
+# Port Used in the -ncat .... steam startup 
 port = "54321"
+
+# Discord Channel ID Goes here (Numerical One not name)
 channel = Channelid goes here
 
 prefix = "mirror "
@@ -23,7 +30,7 @@ banned = ["ent_create player", "snd_restart", "cl_timeout", "cl_ignorepackets", 
           "point_servercommand", "lightprobe", "benchmark", "restart", "ban", "delta", "download", "reload", "render",
           "debug", "software", "texture", "print", "vol", "sendtoconsole", "quit", "kill"]
 
-
+# No comments for you, if it was annoying to write it will be annoying to read
 class MyClient(discord.Client):
     async def on_ready(self):
         print(f'Logged on as {self.user}!')
